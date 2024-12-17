@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chat-header {
+    display: flex;
+    padding: 16px;
+    margin: 0;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    width: 70%;
+}
+
+.back-button {
+    font-size: 20px;
+    color: #88BC67;
+    text-decoration: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.profile-image {
+    width: 50px; /* Base size for image */
+    height: 50px;
+    flex-shrink: 0; /* Prevents shrinking on smaller screens */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Keeps the image centered and scaled */
+}
+
+/* Kolom chat */
+.chat-area {
+    width: 70%;
+    height: 100vh;
+    justify-content: center;
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    bottom: 0; /* Menempelkan ke bagian bawah */
+    position: sticky;
+    z-index: 10; /* Memastikan form berada di atas elemen lain */
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-top: 1px solid #ddd;
+}
+
+.message-form{
+    position: sticky;
+}
+
+.message-area{
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column; /* Menyusun pesan secara vertikal */
+    flex: 1;
+}
+
+.message-container {
+    max-width: 80%; /* Lebar maksimum pesan */
+    padding: 10px;
+    border-radius: 10px;
+    position: relative; /* Untuk penempatan timestamp */
+    flex-direction: column; /* Menyusun teks dan timestamp secara vertikal */
+    margin-bottom: 10px;
+}
+
+.sender-message {
+    background-color: #dcf8c6; /* Warna latar untuk pesan customer */
+    align-self: flex-end; /* Memindahkan pesan customer ke sebelah kanan */
+    text-align: right; /* Rata kanan untuk teks */
+}
+
+.receiver-message {
+    background-color: #ebebeb; /* Warna latar untuk pesan dokter */
+    align-self: flex-start; /* Memindahkan pesan dokter ke sebelah kiri */
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+.timestamp {
+    font-size: 0.75em; /* Ukuran lebih kecil untuk timestamp */
+    color: #888;
+    text-align: right; /* Rata kanan untuk timestamp */
+    display: block;
+    margin-top: 5px;
+}
+
+
+textarea {
+    flex: 1;
+    padding: 4px;
+    resize: none;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 0;
+    
+}
+
+button {
+    padding: 4px 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: #88bc67;
+    border: 0;
+}
+
+span {
+    padding: 4px 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: #88bc67;
+    border: 0;
+}
+
+button:hover{
+    background-color: #a1e07a;
+}
+
+        /* Kontainer untuk textarea dan ikon */
+        .textarea-container {
+            position: relative;
+            width: 100%; /* Sesuaikan lebar kontainer */
+            max-width: 400px; /* Batas lebar maksimal */
+        }
+
+        /* Gaya textarea */
+        .textarea-container textarea {
+            width: 100%;
+            padding-right: 35px; /* Spasi untuk ikon */
+            box-sizing: border-box;
+            height: 100px;
+            resize: none;
+        }
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Menyusun ulang menjadi kolom pada layar kecil */
+    }
+
+    .contact-list {
+        width: 100%; /* Mengatur lebar daftar kontak menjadi 100% */
+        height: auto; /* Menghapus tinggi tetap untuk daftar kontak */
+        position: relative; /* Mengubah posisi menjadi relative */
+        overflow-y: auto; /* Mengizinkan scrolling vertikal */
+    }
+
+    .chat-area {
+        width: 100%; /* Mengatur lebar area chat menjadi 100% */
+        height: 100%; /* Atur tinggi tetap untuk area chat */
+    }
+
+    .chat-header{
+        width: 100%; /* Mengatur lebar area chat menjadi 100% */
+        height: 100%; /* Atur tinggi tetap untuk area chat */
+    }
+        
+    .profile-image {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .chat-header h2 {
+            font-size: 1rem; /* Adjusts font size for small screens */
+        }
+    
+        .chat-image {
+            max-width: 100%; /* Untuk layar kecil, gambar dapat memenuhi lebar container */
+            max-height: 200px; /* Sesuaikan tinggi maksimal agar tetap proporsional */
+        }
+
+}
+

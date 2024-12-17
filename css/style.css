@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@200;300;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #88bc67;
+    --font-weight-light: 300;
+}
+
+.text-hero-regular{
+    font-weight: var(--font-weight-light);
+}
+
+.theme-text{
+    color: var(--main-color);
+}
+
+.act{
+    color: var(--main-color) !important;
+}
+
+
+.navbar{
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.navbar ul li a:hover{
+    color: var(--main-color) !important;
+}
+
+.nav-item{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.logo
+{
+    margin-right: 5px;
+    width: 80px;
+    height: auto;
+}
+
+.offcanvas-body .nav-item {
+  padding-left: 0;
+}
+
+.btn-reserve{
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn-reserve:hover{
+    background: #a1e07a;
+    color: white;
+}
+
+.btn-close{
+    background-color: #8e8e8e;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn-close:hover{
+    background: #c4c4c4;
+    color: white;
+}
+
+.btn-edit{
+  width: 75px;
+  margin-bottom: 10px;
+  background-color:blue;
+}
+
+.btn-delete{
+  width: 75px;
+  background-color: black;
+}
+
+.offcanvas-title{
+    color: var(--main-color);
+}
+
+.next-icon{
+    width: 18px;
+    height: 18px;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.title{
+    color: #88bc67;
+}
+
+/* CSS DOCTORS FILTERS */
+/*
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  .show {
+    display: block;
+  }*/
+  
+  .custom-select select{
+    padding: 6px;
+    color: rgb(86, 86, 86);
+    border: 2px solid lightgray;
+    border-radius: 5px;
+  }
+
+  .card-doctor{
+    background-color: #e6ebe2;
+    border: 0;
+  }
+
+  .card-doctor:hover{
+    background-color: #d2d3d1;
+  }
+
+  .deskripsi{
+    font-size: small;
+  }
+  /* ENDS */
+
+  .card-location{
+    background-color: #e6ebe2;
+  }
+
+  .button-maps{
+    background-color:#5DB8B1;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.button-maps:hover{
+    background-color:#82c8c2;
+    color: white;
+}
+
+.btn-whatsapp{
+    background-color:#88bc67;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+  .btn-whatsapp:hover{
+    background-color:#a1e07a;
+    color: white;
+  }
+
+  .card-promo{
+    border: 0;
+  }
+
+  .smaller-subtitle{
+    color:#88bc67;
+  }
+
+  /* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #F8F9F2;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color:#88bc67;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #F8F9F2;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {
+    color:#5DB8B1;
+    padding-top: 10px;
+}
+
+.link{
+  color: black;
+}
+.link:hover{
+  color: #a1e07a;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    z-index: 1000; /* Pastikan ikon berada di atas elemen lain */
+    background-color: #25d366; /* Warna hijau khas WhatsApp */
+    border-radius: 50%; /* Membuat bentuk bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan bayangan */
+    padding: 10px;
+    text-align: center;
+}
+
+.floating-whatsapp img {
+    width: 40px; /* Ukuran ikon */
+    height: 40px;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 768px) { /* Untuk layar dengan lebar 768px ke bawah */
+    .floating-whatsapp {
+        bottom: 15px; /* Kurangi jarak untuk layar kecil */
+        right: 15px;
+        padding: 8px;
+    }
+    .floating-whatsapp img {
+        width: 35px; /* Kurangi ukuran ikon */
+        height: 35px;
+    }
+}
+@media (max-width: 480px) { /* Untuk layar yang sangat kecil */
+    .floating-whatsapp {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+    .floating-whatsapp img {
+        width: 30px; /* Ukuran lebih kecil */
+        height: 30px;
+    }
+}
+
+
+
+@media only screen and (min-width:1180px){
+    .info{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: large;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .smaller-subtitle{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:1180px){
+    .title{
+        font-size: 40px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .smaller-subtitle{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .title{
+        font-size: 20px;
+        margin-bottom: 0;
+    } 
+    
+    .subtitle{
+        font-size: 22px;
+    }
+
+    .smaller-subtitle{
+        font-size: 20px;
+    }
+
+    .carousel-testi{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .btn-filter{
+        max-width:fit-content
+    }
+
+    .btn.active {
+        max-width:fit-content
+      }
+}
+
+@media only screen and (max-width:452px){
+    .btn-filter.dpk{
+        margin-top: 4px;
+    }
+
+    .btn-filter.bks{
+        margin-top: 4px;
+    }
+}
+
+@media screen and (min-width: 453px) and (max-width: 556px) {
+    .btn-filter.bks{
+        margin-top: 4px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .btn-filter.bks{
+        margin-top: 4px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    .btn-whatsapp{
+        margin-top: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 873px){
+    .carousel-testi{
+        width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .mySlides{
+        padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 350px;
+    padding-right: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .left-content, .right-content{
+        text-align: center;
+    }
+
+  }
+
+  @media only screen and (max-width: 1237px){
+    .left-content, .right-content{
+        text-align: center;
+    }
+
+  }
+
+
+
